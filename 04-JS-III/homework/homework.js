@@ -59,7 +59,7 @@ function dePalabrasAFrase(palabras) {
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
   var palabras = ['Hello', 'world!'];
-  palabras.prototype.join();
+  palabras.prototype.join(' ');
 }
 
 
@@ -68,7 +68,7 @@ function arrayContiene(array, elemento) {
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
   for (var i = 0; i < array.length; i++);
-  if (array [i] === elemento){return true};
+  if (array [i] === elemento){return true;}
   return false;
 }
 
@@ -78,8 +78,8 @@ function agregarNumeros(numeros) {
   // Suma todos los enteros y devuelve el valor
   // Tu código:
   var suma = 0;
-  for (var i = 0; i < numeros.length; i++);
-  suma = suma + numeros [i];
+  for (var i = 0; i < numeros.length; i++){
+  suma = suma + numeros[i];}
   return suma;
 }
 
@@ -90,7 +90,7 @@ function promedioResultadosTest(resultadosTest) {
   // Tu código:
   var suma = 0;
   for (var i = 0; i < resultadosTest.length; i++);
-  suma = (suma + resultadosTest[i])/resultadosTest.length;
+  {suma = (suma + resultadosTest[i])/resultadosTest.length;}
 return suma;
 }
 
@@ -99,9 +99,11 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-    for (var i = 1; i < numeros.length; i++);
-  return numeros.length;
-}
+  var maximo = numeros[0];
+  for(var i = 1; i < numeros.length; i++) {
+    if(numeros[i] > maximo) { 
+      maximo = numeros[i];}
+    }}
 
 
 function multiplicarArgumentos() {
@@ -204,4 +206,4 @@ module.exports = {
   mayorACien,
   breakStatement,
   continueStatement
-};
+}
