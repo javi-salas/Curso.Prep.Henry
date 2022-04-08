@@ -58,7 +58,7 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  var palabras = ['Hello', 'world!'];
+  var palabras = ['Henry', 'JavaScript', 'Class'];
    return palabras.join(' ');
 }
 
@@ -67,9 +67,9 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  for (var i = 0; i < array.length; i++);
-  if (array[i] === elemento){return true;}
+  if (array.includes(elemento)){return true}
   return false;
+
 }
 
 
@@ -155,8 +155,8 @@ function todosIguales(arreglo) {
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
   for (var i = 0; i < arreglo.length; i++)
-  if (arreglo[i] === arreglo){return true}
-  else return false;
+  if (arreglo[i] !== arreglo[i+1]){return false}
+  return true;
 } 
 
 
