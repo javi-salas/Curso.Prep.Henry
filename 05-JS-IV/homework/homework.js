@@ -116,8 +116,9 @@ function pasarUsuarioAPremium(usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
+  
   for (var i = 0; i < usuarios.length; i++)
-  usuario.esPremium = true;
+  usuarios.esPremium = true;
   return usuarios;
 }
 
@@ -144,13 +145,10 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
-producto.calcularPrecioDescuento = Function();
-var descuento = (producto.precio * porcentajeDeDescuento)
-producto.precio - descuento;
-return producto
-
+  producto.calcularPrecioDescuento = function() {
+    return producto.precio - (producto.precio * producto.porcentajeDeDescuento);}
+  return producto;
 }
-
 
 
 // No modificar nada debajo de esta línea
