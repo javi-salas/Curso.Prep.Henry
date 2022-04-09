@@ -118,7 +118,7 @@ function pasarUsuarioAPremium(usuarios) {
   // Tu código:
   
   for (var i = 0; i < usuarios.length; i++)
-  usuarios.esPremium = true;
+  {usuarios.esPremium = true;}
   return usuarios;
 }
 
